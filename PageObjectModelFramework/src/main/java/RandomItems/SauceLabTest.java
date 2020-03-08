@@ -25,7 +25,6 @@ public class SauceLabTest {
 		WebDriver driver = new RemoteWebDriver(new URL(URL), caps);
 		driver.get("http://www.google.com");
 		WebElement element = driver.findElement(By.name("q"));
-
 		element.sendKeys("BrowserStack");
 		element.submit();
 		System.out.println(driver.getTitle());
